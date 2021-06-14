@@ -105,6 +105,31 @@ public class LinkedListSimple
 	}
 	
 	/**
+	 * @param searchElement
+	 * searchElement variable contains element that we want to find.
+	 * @return
+	 * returning true if element found else false not found.
+	 */
+	public boolean find(int searchElement)
+	{
+		Node tempNode = head;
+		
+		if(head == null)
+		{
+			return false;
+		}
+		while(tempNode != null )
+		{
+			if(tempNode.data == searchElement)
+			{
+				return true;
+			}
+			tempNode = tempNode.next;
+		}
+		return false;
+	}
+	
+	/**
 	 * Traversing through linkedlist.
 	 * printing elements one by one.
 	 */
@@ -114,10 +139,10 @@ public class LinkedListSimple
 		
 		while(node.next != null)
 		{
-			System.out.println(node.data);
+			System.out.print(node.data + " --> ");
 			node = node.next;
 		}
-		System.out.println(node.data);
+		System.out.print(node.data);
 	}
 	
 }
