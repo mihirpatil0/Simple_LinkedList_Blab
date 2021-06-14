@@ -19,6 +19,32 @@ public class LinkedListSimple
 	}
 	
 	/**
+	 * @param data
+	 * data has element to be inserted in linkedlist.
+	 * inserting new element at last position.
+	 */
+	public void insertAtLast(int data)
+	{
+		Node newNode = new Node();
+		newNode.data = data;
+		newNode.next = null;
+		
+		if(head == null)
+		{
+			head = newNode;
+		}
+		else
+		{
+			Node tempNode = head;
+			while(tempNode.next != null)
+			{
+				tempNode = tempNode.next;
+			}
+			tempNode.next = newNode;
+		}
+	}
+	
+	/**
 	 * Traversing through linkedlist.
 	 * printing elements one by one.
 	 */
