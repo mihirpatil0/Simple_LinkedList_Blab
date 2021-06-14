@@ -45,6 +45,38 @@ public class LinkedListSimple
 	}
 	
 	/**
+	 * @param index
+	 * index variable contains index number at which position we want to insert element.
+	 * @param data
+	 * data variable contains element that we want to insert.
+	 * Inserting 30 at 1st index.
+	 */
+	public void insertAtLocation(int index, int data)
+	{
+		Node newNode = new Node();
+		newNode.data = data;
+		newNode.next = null;
+		
+		/*if index is 0 then calling insertAtStart() function
+		that will insert element at 0'th position.*/
+		if(index == 0)
+		{
+			insertAtStart(data);
+		}
+		else
+		{
+			Node tempNode = head;
+			for(int i=0; i<index-1; i++)
+			{
+				tempNode = tempNode.next;
+			}
+			newNode.next = tempNode.next;
+			tempNode.next = newNode;
+		}
+		
+	}
+	
+	/**
 	 * Traversing through linkedlist.
 	 * printing elements one by one.
 	 */
