@@ -7,10 +7,10 @@ public class MainClass
 		 LinkedListSimple linkedListObejct = new LinkedListSimple();
 		 
 		 linkedListObejct.insertAtLast(56);
+		 linkedListObejct.insertAtLast(30);
 		 linkedListObejct.insertAtLast(70);
 		 
-		 linkedListObejct.insertAtLocation(1, 30);
-		 
+		 linkedListObejct.deleteAt(0);
 		 linkedListObejct.printList();
 	 }
 }
