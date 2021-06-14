@@ -77,6 +77,23 @@ public class LinkedListSimple
 	}
 	
 	/**
+	 * @param index
+	 * index variable contains index number.
+	 * deleting element from specified index value.
+	 */
+	public void deleteAt(int index)
+	{
+		if(index == 0)
+		{
+			head = head.next;
+		}
+		else
+		{
+			System.out.println("Enter the correct index position");
+		}
+	}
+	
+	/**
 	 * Traversing through linkedlist.
 	 * printing elements one by one.
 	 */
