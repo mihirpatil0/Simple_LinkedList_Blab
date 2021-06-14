@@ -1,9 +1,15 @@
 package com.bridgelab;
 
+import java.util.LinkedList;
+
 public class MainClass 
 {
 	 public static void main(String[] args)
 	 {
-		 System.out.println("Welcome to simple linked list program");
+		 LinkedListSimple linkedListObejct = new LinkedListSimple();
+		 
+		 linkedListObejct.insert(56);
+		 linkedListObejct.insert(30);
+		 linkedListObejct.insert(70);
 	 }
 }
