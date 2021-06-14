@@ -10,7 +10,7 @@ public class MainClass
 		 linkedListObejct.insertAtLast(30);
 		 linkedListObejct.insertAtLast(70);
 		 
-		 linkedListObejct.deleteAt(0);
+		 linkedListObejct.deleteAt(2);
 		 linkedListObejct.printList();
 	 }
 }
