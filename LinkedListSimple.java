@@ -83,13 +83,24 @@ public class LinkedListSimple
 	 */
 	public void deleteAt(int index)
 	{
+		//if index value is 0 then deleting first element.
 		if(index == 0)
 		{
 			head = head.next;
 		}
+		// if index value is not 0 something else.
 		else
 		{
-			System.out.println("Enter the correct index position");
+			Node tempNode = head;
+			Node tempNodeTwo = null;
+			
+			for(int i=0; i<index-1; i++)
+			{
+				tempNode = tempNode.next;
+			}
+			tempNodeTwo = tempNode.next;
+			tempNode.next = tempNodeTwo.next;
+			System.out.println("Element we are deleting is : " + tempNodeTwo.data);
 		}
 	}
 	
