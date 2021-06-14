@@ -130,6 +130,29 @@ public class LinkedListSimple
 	}
 	
 	/**
+	 * Sorting the linkedlist in ascending order.
+	 */
+	public void sort()
+	{
+		Node i = new Node();
+		Node j = new Node();
+		int temp;
+		
+		for(i=head; i.next != null; i=i.next)
+		{
+			for(j=i.next; j != null; j=j.next)
+			{
+				if(i.data > j.data)
+				{
+					temp = i.data;
+					i.data = j.data;
+					j.data = temp;
+				}
+			}
+		}
+	}
+	
+	/**
 	 * Traversing through linkedlist.
 	 * printing elements one by one.
 	 */
@@ -142,7 +165,6 @@ public class LinkedListSimple
 			System.out.print(node.data + " --> ");
 			node = node.next;
 		}
-		System.out.print(node.data);
-	}
-	
+		System.out.print(node.data + " \n");
+	}	
 }
