@@ -6,9 +6,9 @@ public class MainClass
 	 {
 		 LinkedListSimple linkedListObejct = new LinkedListSimple();
 		 
-		 linkedListObejct.insertAtStart(70);
-		 linkedListObejct.insertAtStart(30);
-		 linkedListObejct.insertAtStart(56);
+		 linkedListObejct.insertAtLast(56);
+		 linkedListObejct.insertAtLast(30);
+		 linkedListObejct.insertAtLast(70);
 		 
 		 linkedListObejct.printList();
 	 }
